@@ -1,0 +1,36 @@
+<!-- Index page is the entry point to the game, take
+user name from user and afterclick start , user
+will be redirected to the game page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shooting Birds</title>
+    
+</head>
+<body>
+    <div>
+        <form action="Game.html">
+                Enter Your Name:<br>
+                <input class="Boxes" type="text" name="Name" placeholder="Please enter your name" required /><br>
+
+                Select Level:<br>
+                <select class="Boxes">
+                    <option value="level1">Level 1</option>
+                </select><br>
+                   
+               <input class="Boxes" type="submit"  value="Start" />
+        </form>     
+    </div>
+
+    <div>
+        Birds Points Break down <br>
+         <h2><img src="Assets/bird3.gif" alt="bird3" height="50px" width="100px">+5</h2> 
+         <h3><img src="Assets/bird2.gif" alt="bird2" height="50px" width="100px">+10</h3> 
+         <h4><img src="Assets/bird1.gif" alt="bird1" height="50px" width="100px">-10</h4>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+.birdSize {
+    height: 15%;
+    position: absolute;
+}
+
+.bombSize {
+    height: 8%;
+    position: absolute;
+}
+
+.expGif {
+    position: absolute;
+    width: 25%;
+    height: auto;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+html {
+    cursor: url("Assets/cursor.svg"), auto;
+}
+
+body {
+    background-image: url(Assets/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+}
+
+div {
+    background-color: rgba(179, 255, 132, 0.5);
+    width: 30%;
+    height: auto;
+    border: 3px solid rgb(7, 150, 7);
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 4%;
+    padding: 2%;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 100%;
+    color: rgb(81, 17, 230);
+}
+
+.Boxes {
+    background-color: rgba(216, 207, 207, 0.5);
+    border: 3px solid rgb(7, 150, 7);
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    font: size 100%;
+    font-weight: bold;
+    font-family: cursive;
+    width: 90%;
+}
+
+p {
+    margin: auto;
+}
+
+h2 {
+    color: blue;
+    font-size: 30px;
+    margin: 2px;
+}
+
+h3 {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    margin: 2px;
+}
+
+h4 {
+    color: black;
+    font-size: 30px;
+    margin: 2px;
+}
+
+h5 {
+    color: black;
+    font-size: medium;
+    margin: auto;
+
+}
+
+.img-with-text {
+    text-align: justify;
+    width: [width of img];
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
+
+tr {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+.highScore {
+    background-color: rgba(179, 255, 132, 0.5);
+    width: 30%;
+    height: auto;
+    border: 3px solid rgb(7, 150, 7);
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 4%;
+    padding: 4%;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 100%;
+    color: rgb(81, 17, 230);
+    animation-name: stretch;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(1);
+        background-color: rgb(61, 249, 139);
+        /* border-radius */
+    }
+
+    100% {
+        transform: scale(1.1);
+        background-color: rgb(61, 249, 139);
+    }
+}
+
+.upperBar {
+    display: inline-block;
+    width: 13.5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 0%;
+    font-size: medium;
+    color: rgb(7, 150, 7);
+    padding: 1%;
+}
+
+.GameDiv {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -50px;
+    background-color: rgb(216, 207, 207);
+}
+
+video {
+    width: auto;
+}
