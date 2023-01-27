@@ -41,7 +41,7 @@ const saveScore=function()
     localStorage.setItem("highestScore",JSON.stringify(playerData));
     }
 }
-
+//===============================================================================================================================================================================================================
 const highScoreDisp=function()
 {
     let highScoreDiv=document.querySelector("h5")
@@ -52,13 +52,13 @@ const highScoreDisp=function()
     }
     else{highScoreDiv.innerText=document.querySelector("h5").innerHTML+"\n"+"No scores yet"+"\n"+"Press anywhere to start";}
 }
-
+//=====================================================================
 const startEvent=function()
 {
     startGame();
     window.onclick=function(){}    
 }
-
+//=====================================================================
 const stopGame=function()
 {
     let imgList=document.querySelectorAll("img");
@@ -68,7 +68,7 @@ const stopGame=function()
         imgList[i].remove();
     }
 }
-
+//=====================================================================
 const timeLimit=function()
 {
     let timeBar=document.querySelectorAll("div[class='upperBar']")[2];
@@ -82,8 +82,8 @@ const timeLimit=function()
         
     }, 1000);
 }
-
-let pascalCase=(Input)=>
+//=====================================================================
+const pascalCase=(Input)=>
 {   
     let result=""
     let splitString=Input.split(" ")
@@ -93,7 +93,7 @@ let pascalCase=(Input)=>
     }
     return result;
 }
-
+//=====================================================================
 const gameResult=function()
 {
     let div=document.createElement('div');
@@ -138,7 +138,7 @@ const gameResult=function()
     div.append(btn);
     btn.onclick=function(){location.href="index.html"};
 }
-
+//=====================================================================
 const userWelcome=function()
 {
     let playerName=getPlayerName();
