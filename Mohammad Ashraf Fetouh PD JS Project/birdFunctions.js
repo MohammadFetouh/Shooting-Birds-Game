@@ -36,7 +36,7 @@ const moveBird=function(newBird)
     return intervId;
 }
 
-let shootBird=function()
+const shootBird=function()
 {    
     if(this.ID==0){score-=10;}
     if(this.ID==1){score+=10;}
